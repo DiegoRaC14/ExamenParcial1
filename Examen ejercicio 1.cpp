@@ -4,20 +4,22 @@
 
 int main()
 {
-	int i=1;
-	int numeroEntero;//	Variable a ingresar
-	int suma=0;// Variable almacenar la suma
-	
-	printf("Ingrese un numero entero:");
-	scanf("%d", &numeroEntero);
-	
-	    while (i <= 10)
-	{
-	        suma =numeroEntero+1;
-	        i++; // Aumentar i en 1 hasta que sea menor que el numero que se introdujo 
-			printf("%d\n", i);//Mostrar la suma de los numeros en lista
+    int numeroEntero;//Variable a ingresar
+    int i=1;
+    
+    printf("Ingrese un numero entero:");
+    scanf("%d", &numeroEntero);
 
+    while (i <= 10)//Mientras i sea menor o igual a 1 se repite if
+	{
+		if (i <= 10)//Si i es menor que 10 se repite lo que sigue
+		{
+		printf("%d\n", numeroEntero + i);//Se suma i al numero ingresado cada que se repite
+        i++;//i aumenta en 1 hasta que se deje de cumplir que i<=10
+    	}
     }
+	
     return 0;
 }
+
 
