@@ -4,20 +4,20 @@
 
 int main()
 {
-	int numeroEntero;
-	printf("Ingrese un numero entero:");
-	scanf("%d",&numeroEntero);
+	int i=1;
+	int numeroEntero;//	Variable a ingresar
+	int suma=0;// Variable almacenar la suma
 	
-	printf("%d\n",numeroEntero+1);
-	printf("%d\n",numeroEntero+2);
-	printf("%d\n",numeroEntero+3);
-	printf("%d\n",numeroEntero+4);
-	printf("%d\n",numeroEntero+5);
-	printf("%d\n",numeroEntero+6);
-	printf("%d\n",numeroEntero+7);
-	printf("%d\n",numeroEntero+8);
-	printf("%d\n",numeroEntero+9);
-	printf("%d\n",numeroEntero+10);
+	printf("Ingrese un numero entero:");
+	scanf("%d", &numeroEntero);
+	
+	    while (i <= 10)
+	{
+	        suma =numeroEntero+1;
+	        i++; // Aumentar i en 1 hasta que sea menor que el numero que se introdujo 
+			printf("%d\n", i);//Mostrar la suma de los numeros en lista
 
-return 0; 
+    }
+    return 0;
 }
+
