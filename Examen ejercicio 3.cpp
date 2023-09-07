@@ -15,9 +15,9 @@ int main()
 	{
         if (i % 2 != 0) 
 		{
-            printf("%d\n", i);
+            printf("%d\n", i);//Mostrar solo los numeros que cumplan la condicion de if
         }
-        i++; // Aumentar i en 1 hasta 
+        i++; // Aumentar i en 1 hasta que sea menor que el numero que se introdujo
     }
     return 0;
 }
