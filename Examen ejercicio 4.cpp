@@ -4,16 +4,19 @@
 
 int main(){
 	
-	int i;
-	int mult;
+	int i=1;
+	int mult;//Variable a ingresar
 	
 	printf("Ingrese el numero de la tabla de multiplicar que le gustaria ver:");
 	scanf("%d", &mult);
 	
-	for(i=0;i<=10;i++)//Crear numeros del 1 al 10
-	{
-		printf("\n%d x %d = %d\n",i,mult,i*mult);	//Realiza las operaciones
+	while(i<=10)//Imprime los numero siempre y cuando sean menores o iguales a 10
+	{	
+		if (i<=10)//Imprime operaciones cuando 1<=10
+		{
+			printf("\n%d x %d = %d\n",i,mult,i*mult);	//Realiza las operaciones
+		}
+		i++;
 	}
-	
 	return 0;
 }
